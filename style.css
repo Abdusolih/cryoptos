@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.fon{
+    background-color: #1B004E;
+    padding: 50px 0;
+}
+
+.head{
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headul{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.headbutton{
+    padding: 10px 26px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid #EB5757;
+    color: white;
+}
+
+.headbutton:hover{
+    padding: 10px 26px;
+    background-color: #EB5757;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    color: white;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.headli:hover{
+    color: #a7a7a7;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.burger{
+    display: none;
+    width: 30px;
+}
+
+@media (max-width:1080px){
+    .container{
+        padding: 30px 30px;
+    }
+}
+
+@media (max-width:910px) {
+    .burger{
+        display: flex;
+    }
+    .headli{
+        display: none;
+    }
+}
+
+@media (max-width:430px){
+    .headbutton{
+        display: none;
+    }
+    .logo{
+        width: 100px;
+    }
+}
+
+.headright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* -------------------------hero--------------------------- */
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+
+.heroimg{
+    width: 540px;
+}
+.heroh1{
+    font-size: 45px;
+    width: 570px;
+    color: white;
+}
+
+.herop{
+    color: white;
+    width: 490px;
+    padding: 10px 0 20px 0;
+}
+
+.herobutton{
+    border: 1px solid transparent;
+    background-color: #EB5757;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.herobutton:hover{
+    border: 1px solid #EB5757;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+@media (max-width:1082px){
+    .heroimg{
+        display: none;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+    .herodiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:620px){
+    .hero{
+        display: flex;
+        align-items: center;
+    }
+    .heroh1{
+        font-size: 30px;
+        width: 370px;
+    }
+    .herop{
+        font-size: 14px;
+        width: 370px;
+    }
+}
+
+@media (max-width:420px){
+    .heroh1{
+        font-size: 20px;
+        width: 270px;
+    }
+    .herop{
+        font-size: 10px;
+        width: 270px;
+    }
+    .herobutton{
+        padding: 7px 10px;
+    }
+}
+
+/* ---------------------main2---------------------- */
+
+.main2h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.main2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.main2li{
+    padding: 5px 0;
+}
+
+.main2img{
+    margin-left: 30px;
+    padding: 10px 0;
+}
+
+@media (max-width:884px){
+    .main2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* -------------------main3--------------------- */
+
+.main3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 00px;
+}
+
+.main31{
+    margin-top: 200px;
+}
+
+.main3h1{
+    font-size: 40px;
+    width: 470px;
+    padding: 10px 0;
+}
+
+.main3p{
+    font-size: 13px;
+    width: 430px;
+}
+
+.iphone{
+    width: 390px;
+    margin-left: 260px;
+    margin-top: 70px;
+}
+
+@media (max-width:1082px){
+    .main3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .iphone{
+        margin-right: 300px;
+    }
+}
+
+@media (max-width:530px){
+    .main3h1{
+        font-size: 23px;
+        width: 270px;
+    }
+    .main3p{
+        font-size: 10px;
+        width: 270px;
+    }
+    .main3buttons{
+        width: 200px;
+    }
+    .iphone{
+        width: 280px;
+    }
+}
+
+/* -------------------main4------------------- */
+
+.main4card{
+    background-color: rgba(169, 169, 169, 0.26);
+    width: 368px;
+    padding: 15px 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.main4img{
+    width: 300px;
+}
+
+.main4cards{
+    display: flex;
+    gap: 30px;
+}
+
+.container1{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.main4h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 30px 0;
+}
+
+.main4{
+    padding: 30px 50px;
+}
+
+@media (max-width:1082px){
+    .main4cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:460px){
+    .main4card{
+        width: 300px;
+    }
+    .maini4img{
+        width: 300px;
+    }
+}
+
+@media (max-width:400px){
+    .main4card{
+        width: 200px;
+    }
+    .maini4img{
+        width: 200px;
+    }
+}
+
+/* ------------------main5------------- */
+
+.main5inputs{
+    background-color: transparent;
+    border: 1px solid white;
+    width: 500px;
+    padding: 12px 16px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main5input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 200px;
+}
+
+.main5button{
+    padding: 13px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: #EB5757;
+    color: white;
+}
+
+.main5h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+}
+
+.main5p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 4px 0 36px 0;
+    font-size: 20px;
+}
+
+.main5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:580px){
+    .main5h1{
+        font-size: 30px;
+    }
+    .main5p{
+        font-size: 15px;
+    }
+    .main5inputs{
+        width: 300px;
+        height: 40px;
+    }
+    .main5button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* --------------------footer----------------- */
+
+.footer{
+    background-color: #220076;
+    color: white;
+}
+
+.footer1{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 60px 0 40px 0;
+}
+
+
+.footer ul li{
+    padding: 10px 0;
+}
+
+.footergiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer ul li:hover{
+    color: #a8a8a8;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+@media (max-width:944px){
+    .footer1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
